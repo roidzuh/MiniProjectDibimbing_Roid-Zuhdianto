@@ -1,0 +1,65 @@
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  color: #4caf50;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.testimoni img {
+  width: 6.25rem;
+  height: 9.375rem;
+  border-radius: 100px;
+}
+
+.testimoni .card {
+  border: none;
+  color: #4caf50;
+  font-size: 1.25rem;
+  font-weight: 700;
+  opacity: 50%;
+}
+
+.testimoni .card h5 {
+  font-weight: 700;
+}
+
+.testimoni .active {
+  opacity: 100%;
+  border-radius: 20px;
+  background: #f2f9f2;
+  box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p,
+  .testimoni .card {
+    font-size: 1rem;
+  }
+
+  .testimoni h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p,
+  .testimoni .card {
+    font-size: 0.8rem;
+  }
+
+  .testimoni h5 {
+    font-size: 1rem;
+  }
+}

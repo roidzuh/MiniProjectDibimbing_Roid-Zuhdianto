@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style/re-use.css" />
+    <link rel="stylesheet" href="style/menu.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="fixed-top header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">F<span>OO</span>D</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto gap-5 d-flex flex-row align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentangKami.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cta" href="hubungiKami.html">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="garis-horizontal"></div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="custom-spacing service">
+        <h2 class="text-center mb-4">
+          Pelayanan Pengiriman <span>Terbaik</span> Kami
+        </h2>
+        <div class="row text-center p-5 bg-container">
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+            <img src="images/fresh.png" alt="fresh food" class="img-fluid" />
+            <h3 class="my-3 service-heading">Fresh Food</h3>
+            <p class="service-text">
+              Nikmati kesegaran tanpa tanding setiap gigitannya!
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-down">
+            <img
+              src="images/delivery.png"
+              alt="fast delivery"
+              class="img-fluid"
+            />
+            <h3 class="my-3 service-heading">Fast Delivery</h3>
+            <p class="service-text">
+              Nikmati kegembiraan pengiriman kami yang cepat dan efisien!
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12" data-aos="fade-up">
+            <img src="images/calender.png" alt="calender" class="img-fluid" />
+            <h3 class="my-3 service-heading">Enjoy Today</h3>
+            <p class="service-text">
+              Rasakan kelezatan hari ini, ciptakan kenangan untuk esok!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-spacing menu">
+        <h2 class="text-center mb-4"><span>Menu</span></h2>
+
+        <div class="menu-filters text-center mb-5">
+          <button class="filter-btn btn active" data-filter="all">All</button>
+          <button class="filter-btn btn" data-filter="breakfast">
+            Breakfast
+          </button>
+          <button class="filter-btn btn" data-filter="lunch">Lunch</button>
+          <button class="filter-btn btn" data-filter="dessert">Dessert</button>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="breakfast"
+          >
+            <img
+              src="images/fresh-salad-bowl.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Fresh salad"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Bowl Vegan Bliss</h5>
+                <p class="card-text mb-5">
+                  Campuran quinoa lezat, sayuran segar seperti kale, wortel, dan
+                  brokoli, disajikan dengan hummus krimi dan dressing lemon.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Bowl Vegan Bliss"
+                  data-description="Campuran quinoa lezat, sayuran segar seperti kale, wortel, dan brokoli, disajikan dengan hummus krimi dan dressing lemon."
+                  data-price="50000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="lunch"
+          >
+            <img
+              src="images/cheeseburger.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Burger"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Burger Vegan Zenith</h5>
+                <p class="card-text mb-5">
+                  Patty burger plant-based yang terbuat dari kombinasi sayuran,
+                  kacang-kacangan, dan rempah, diapit oleh roti gandum utuh.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Burger Vegan Zenith"
+                  data-description="Patty burger plant-based yang terbuat dari kombinasi sayuran,
+                kacang-kacangan, dan rempah, diapit oleh roti gandum utuh."
+                  data-price="40000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="breakfast"
+          >
+            <img
+              src="images/tacos.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="tacos"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Tacos Lentil Delight</h5>
+                <p class="card-text mb-5">
+                  Tacos lezat dengan filling lentil yang kaya protein, disajikan
+                  dengan guacamole lembut, tomat segar, dan selada.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Tacos Lentil Delight"
+                  data-description="Tacos lezat dengan filling lentil yang kaya protein, disajikan
+                dengan guacamole lembut, tomat segar, dan selada."
+                  data-price="45000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="breakfast"
+          >
+            <img
+              src="images/menu 4.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="smoothie berry"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Smoothie Bowl Berry</h5>
+                <p class="card-text mb-5">
+                  Mangkuk smoothie lezat berisi campuran blueberry, raspberry,
+                  dan pisang, ditambah dengan granola, biji chia, dan irisan
+                  buah segar untuk sarapan yang menyegarkan.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Smoothie Bowl Berry"
+                  data-description="Mangkuk smoothie lezat berisi campuran blueberry, raspberry, dan pisang, ditambah dengan granola, biji chia, dan irisan buah segar untuk sarapan yang menyegarkan."
+                  data-price="55000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="dessert"
+          >
+            <img
+              src="images/menu 5.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="puding vanilla"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Puding Chia Vanilla dan Buah</h5>
+                <p class="card-text mb-5">
+                  Puding chia yang lembut dengan ekstrak vanilla dan susu
+                  almond, disajikan dengan topping buah-buahan segar seperti
+                  kiwi dan beri.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Puding Chia Vanilla dan Buah"
+                  data-description="Puding chia yang lembut dengan ekstrak vanilla dan susu almond, disajikan dengan topping buah-buahan segar seperti kiwi dan beri."
+                  data-price="30000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="dessert"
+          >
+            <img
+              src="images/menu 6.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="brownies cokelat"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Brownies Cokelat Fudge Vegan</h5>
+                <p class="card-text mb-5">
+                  Brownies cokelat lembut dan lezat tanpa produk hewani, dengan
+                  tekstur fudge yang kaya dan toping kacang walnut.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Brownies Cokelat Fudge Vegan"
+                  data-description="Brownies cokelat lembut dan lezat tanpa produk hewani, dengan tekstur fudge yang kaya dan toping kacang walnut."
+                  data-price="40000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="dessert"
+          >
+            <img
+              src="images/menu 7.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Sorbet Lemon dan Mint"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Sorbet Lemon dan Mint</h5>
+                <p class="card-text mb-5">
+                  Sorbet lemon yang menyegarkan dengan sentuhan daun mint,
+                  penutup yang sempurna untuk hari yang panas, ringan dan tidak
+                  terlalu manis.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Sorbet Lemon dan Mint"
+                  data-description="Sorbet lemon yang menyegarkan dengan sentuhan daun mint, penutup yang sempurna untuk hari yang panas, ringan dan tidak terlalu manis."
+                  data-price="40000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="lunch"
+          >
+            <img
+              src="images/menu 8.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Wrap Sayuran Mediterranean"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Wrap Sayuran Mediterranean</h5>
+                <p class="card-text mb-5">
+                  Wrap lezat yang diisi dengan hummus, timun, tomat, dan zaitun,
+                  serta saus yogurt ringan, cocok untuk makan siang yang segar
+                  dan ringan.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Wrap Sayuran Mediterranean"
+                  data-description="Wrap lezat yang diisi dengan hummus, timun, tomat, dan zaitun, serta saus yogurt ringan, cocok untuk makan siang yang segar dan ringan."
+                  data-price="50000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="lunch"
+          >
+            <img
+              src="images/menu 9.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Salad Quinoa Tropis"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Salad Quinoa Tropis</h5>
+                <p class="card-text mb-5">
+                  Salad quinoa ringan dengan mangga, alpukat, paprika merah, dan
+                  vinaigrette jeruk nipis, sempurna untuk makan siang yang
+                  menyegarkan.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Salad Quinoa Tropis"
+                  data-description="Salad quinoa ringan dengan mangga, alpukat, paprika merah, dan vinaigrette jeruk nipis, sempurna untuk makan siang yang menyegarkan."
+                  data-price="50000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="lunch"
+          >
+            <img
+              src="images/menu 10.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Pasta"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">
+                  Pasta Primavera dengan Saus Alfredo Vegan
+                </h5>
+                <p class="card-text mb-5">
+                  Pasta whole wheat yang dimasak dengan campuran sayuran musiman
+                  dan saus alfredo vegan yang kaya dan krem.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Pasta Primavera dengan Saus Alfredo Vegan"
+                  data-description="Pasta whole wheat yang dimasak dengan campuran sayuran musiman dan saus alfredo vegan yang kaya dan krem."
+                  data-price="60000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="dessert"
+          >
+            <img
+              src="images/menu 11.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Cheesecake Berry Tanpa Panggang"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Cheesecake Berry Tanpa Panggang</h5>
+                <p class="card-text mb-5">
+                  Cheesecake vegan yang lembut dengan lapisan berry segar,
+                  dibuat tanpa panggang dan sempurna sebagai penutup manis yang
+                  sehat.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Cheesecake Berry Tanpa Panggang"
+                  data-description="Cheesecake vegan yang lembut dengan lapisan berry segar, dibuat tanpa panggang dan sempurna sebagai penutup manis yang sehat."
+                  data-price="60000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mb-3 item"
+            data-aos="zoom-in"
+            data-category="breakfast"
+          >
+            <img
+              src="images/menu 12.png"
+              class="card-img-top mb-4 img-fluid"
+              alt="Avocado Toast Gourmet"
+            />
+            <div class="card bg-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Avocado Toast Gourmet</h5>
+                <p class="card-text mb-5">
+                  Roti gandum panggang yang diolesi dengan alpukat matang,
+                  ditaburi biji labu, biji bunga matahari, dan sedikit cabai
+                  merah untuk rasa ekstra.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-card"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuModal"
+                  data-name="Avocado Toast Gourmet"
+                  data-description="Roti gandum panggang yang diolesi dengan alpukat matang, ditaburi biji labu, biji bunga matahari, dan sedikit cabai merah untuk rasa ekstra."
+                  data-price="55000"
+                >
+                  Online Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal & Toast -->
+      <section>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="menuModal"
+          tabindex="-1"
+          aria-labelledby="menuModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="menuModalLabel"></h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p id="menuDescription"></p>
+                <div class="mb-3">
+                  <label for="quantity" class="form-label">Jumlah:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                  />
+                </div>
+                <p class="mb-3">Harga: <span id="price">50.000</span> IDR</p>
+              </div>
+              <div class="modal-footer">
+                <p class="m-auto">
+                  Total: <span id="totalPrice">50.000</span> IDR
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-kel"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  id="maintenanceToastBtn"
+                  class="btn btn-card toast-trigger"
+                  data-bs-dismiss="modal"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toast untuk Notifikasi Maintenance -->
+        <div
+          id="maintenanceToast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          class="toast"
+          data-bs-autohide="false"
+        >
+          <div class="toast-header">
+            <strong class="me-auto">Pemberitahuan</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Maaf, website sedang dalam perawatan. Silakan coba lagi nanti.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row mx-4 my-2 py-5">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <h2 class="logo-footer mb-4">F<span>OO</span>D</h2>
+            <p>
+              Terima kasih telah menemani kami dalam perjalanan kuliner Anda.
+              Kami berharap setiap hidangan telah membawa kebahagiaan dan
+              kenangan manis. Sampaikan pengalaman Anda, dan jangan lupa kembali
+              untuk mencicipi kelezatan baru lainnya. Sampai jumpa di meja makan
+              kami lagi!
+            </p>
+
+            <ul class="d-flex justify-content-start gap-4" data-aos="fade-up">
+              <li>
+                <a href="#"><i class="bi bi-google h4"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter-x h4"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook h4"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="bi bi-instagram h4"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex flex-column align-items-center open-time"
+          >
+            <h2 class="h2-footer mb-4">Open Hours</h2>
+            <div class="d-flex gap-3 fw-bold">
+              <p>
+                Senin <br />
+                Selasa <br />
+                Rabu <br />
+                Kamis <br />
+                Jumat <br />
+                Sabtu <br />
+                Minggu
+              </p>
+              <p>
+                9:00 - 20:00<br />
+                9:00 - 20:00<br />
+                9:00 - 20:00<br />
+                9:00 - 20:00<br />
+                9:00 - 20:00<br />
+                9:00 - 20:00<br />
+                9:00 - 20:00
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h2 class="h2-footer mb-4">Newsletter</h2>
+            <p>Dapatkan informasi dan promo terbaru dari kami</p>
+            <form id="newsletterForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control text-center p-3"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter Email Address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Silakan masukkan alamat email yang valid.
+                </div>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-footer p-3 toast-trigger" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="text-center copyright">
+        copyright ©2023 F<span>OO</span>D - All rights reserved.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="javascript/modalToastFilter.js"></script>
+  </body>
+</html>
